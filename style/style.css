@@ -14,14 +14,16 @@
         font-size: 20px;
         }
     .blok {
-        position: absolute;   
+        
+        
         width: 70%;
         height: 100%;
         display:flex;
         margin: 0 15%;
-        /* justify-content:center; */
-        /* text-align: justify; */
+        display: flex;
+        flex-direction: column;
         border: 1px solid #000;
+        /* z-index: 2; */
      
     
     }
@@ -39,12 +41,16 @@
 
     }
     .blok__menu {
-        
+        display: flex;       
+        justify-content:space-between;
+        align-items: center;
+        width: 98%;
+        height: 8%;
+        margin: 0.4rem;
+            
             /* position: absolute;  */
             /* display: flex; */
-            width: 98%;
-            height: 8%;
-            margin: 0.4rem;
+          
             font-family: Open Sans;
             font-size: 0.8rem;
             font-style: normal;
@@ -56,22 +62,27 @@
     .logo {
         display: flex;
         width: 10%;
+        align-items: center
+        
         
     }
-    .blok_menu {
-        display: flex;
-        align-items: center;
+    .blok__menu__nav {
+        /* display: inline-block;
+        justify-self: start; */
         /* justify-items: baseline; */
-        width: 43%;
-        height: 35%;
-        border: 1px solid #0150E9;
+        width: 56%;
+        height: 1%;
+        /* border: 1px solid #0150E9; */
+        /* flex-direction: row; */
+}
 
-    }
+ 
 
-    .nav__menu {
-        
+    .nav__menu {        
         display: flex;
         justify-content: center;
+        /* width: 20%; 
+        height: 1%;       */
         gap: 1em;
         border: 1px solid #20C905;
     }
